@@ -247,7 +247,12 @@ p{
 
 #main-slider a.scroll {
 	font-size:24px;
-	color:#FFF;
+	position: absolute;
+    color: #FFF;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #main-slider .caption .btn-minka{
@@ -629,7 +634,7 @@ a.socmed.instagram{
 @media screen and (max-width:1000px){
 
 	#main-nav{
-		background:#000;
+		background:transparent;
 		padding-top:5px;
 		padding-bottom:5px;
 		position:fixed;
@@ -754,7 +759,6 @@ a.socmed.instagram{
 	}
 
 	#main-slider{
-		margin-top: 60px;
 	}
 
 
@@ -829,7 +833,7 @@ a.socmed.instagram{
 /* responsive slider */
 @media screen and (max-width:768px) and (orientation:portrait){
 	#main-slider{
-		height: 50vh;
+		height: 70vh;
 	}
 
 	#main-slider .caption .btn-minka{
